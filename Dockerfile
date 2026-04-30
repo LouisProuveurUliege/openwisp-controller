@@ -18,6 +18,10 @@ ADD . /opt/openwisp
 RUN pip install -U /opt/openwisp && \
     rm -rf /var/lib/apt/lists/* /root/.cache/pip/* /tmp/*
 
+COPY netjsonconfig/ /opt/openwisp/netjsonconfig/
+RUN pip install -U /opt/openwisp/netjsonconfig && \
+    rm -rf /var/lib/apt/lists/* /root/.cache/pip/* /tmp/*
+
 WORKDIR /opt/openwisp/tests/
 ENV NAME=openwisp-controller \
     PYTHONBUFFERED=1

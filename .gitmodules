@@ -1,0 +1,3 @@
+[submodule "netjsonconfig"]
+	path = netjsonconfig
+	url = git@github.com:LouisProuveurUliege/netjsonconfig.git

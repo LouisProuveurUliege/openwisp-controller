@@ -13,6 +13,7 @@ BACKENDS = get_setting(
     (
         ("netjsonconfig.OpenWrt", "OpenWRT"),
         ("netjsonconfig.OpenWisp", "OpenWISP Firmware 1.x"),
+        ("netjsonconfig.UGW3", "UniFi UGW3"),
     ),
 )
 
